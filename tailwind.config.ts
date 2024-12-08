@@ -12,7 +12,15 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily:{
+        title:["Montserrat", "Monst",
+          "Poppins", "Popp"
+        ]
+        
+      },
+     
     },
   },
   plugins: [],
 } satisfies Config;
+
