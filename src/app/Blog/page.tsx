@@ -8,7 +8,7 @@ export default function Blog(){
       {/* Header Section */}
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
         <div className="flex items-center space-x-4">
-          <Image
+          <img
             src="/images/Meubel House_Logos-05.png"
             alt="logo-img"
             width={50}
