@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function HomepageNav() {
   return (
     <div className="w-full py-[30px] pl-[54px] pr-[100px] bg-white">
-      {/* Header */}
+    
       <header className="flex justify-between mx-auto h-fit">
         <div className="flex items-center">
           <Image
@@ -27,10 +27,10 @@ export default function HomepageNav() {
               <Link href="/Shop" target="_blank">Shop</Link>
             </li>
             <li>
-              <Link href="/about">About</Link>
+              <Link href="/Blog">Blog</Link>
             </li>
             <li>
-              <Link href="/contact">Contact</Link>
+              <Link href="/Contact" target="_blank">Contact</Link>
             </li>
           </ul>
         </nav>

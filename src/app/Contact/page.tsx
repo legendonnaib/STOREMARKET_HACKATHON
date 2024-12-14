@@ -1,95 +1,14 @@
-"use client";
+'use client';
+
 import { Icon } from "@iconify/react";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Header() {
- 
-  const product = [
-    { title: "sylthrine" },
-    { price: "Rp 2.500.000" },
-  ];
-
-
-
-  const product1 = [
-    { title1: "Lolito" },
-    { price1: "7.500.000" },
-  ];
-
-
-  const product2 = [
-    { title: "Respira"},
-    { title: "Library Studies", price: "$120" },
-    { title: "Web Design", price: "Rp 500.000" },
-  ];
-  const product3 = [
-    { title: "Leviosa", price: "$80" },
-    { title: "Library Studies", price: "$120" },
-    { title: "Web Design", price: "Rp 2.500.00" },
-  ];
-  const product4 = [
-    { title: "Lalito"},
-    { title: "Library Studies", price: "$120" },
-    { title: "Web Design", price: "Rp 2.500.000" },
-  ];
-  const product5 = [
-    { title: "Respira"},
-    { title: "Library Studies", price: "$120" },
-    { title: "Web Design", price: "7.500.000" },
-  ];
-  const product6 = [
-    { title: "Sytherina"},
-    { title: "Library Studies", price: "$120" },
-    { title: "Web Design", price: "Rp 500.000" },
-  ];
-  const product7 = [
-    { title: "Leviosa"},
-    { title: "Library Studies", price: "$120" },
-    { title: "Web Design", price: "Rp 2.500.00" },
-  ];
-  const product8 = [
-    { title: "Lalito"},
-    { title: "Library Studies", price: "$120" },
-    { title: "Web Design", price: "Rp 2.500.000" },
-  ];
-  
-  const product9 = [
-    { title: "Respira"},
-    { title: "Library Studies", price: "$120" },
-    { title: "Web Design", price: "7.500.000" },
-  ];
-  const product10 = [
-    { title: "Sytherina"},
-    { title: "Library Studies", price: "$120" },
-    { title: "Web Design", price: "Rp 500.000" },
-  ];
-  const product11 = [
-    { title: "Levisio"},
-    { title: "Library Studies", price: "$120" },
-    { title: "Web Design", price: "Rp 2.500.00" },
-  ];
-  const product12 = [
-    { title: "Lalito"},
-    { title: "Library Studies", price: "$120" },
-    { title: "Web Design", price: "Rp 2.500.000" },
-  ];
-  const product13 = [
-    { title: "Respira"},
-    { title: "Library Studies", price: "$120" },
-    { title: "Web Design", price: "7.500.000" },
-  ];
-
-  const product14 = [
-    { title: "Sytherina"},
-    { title: "Library Studies", price: "$120" },
-    { title: "Web Design", price: "Rp 500.000" },
-  ];
-  
+export default function Contact() {
   return (
-    <header className="bg-white shadow-md">
+    <div>
+      {/* Header Section */}
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
-      
         <div className="flex items-center space-x-4">
           <Image
             src="/images/Meubel House_Logos-05.png"
@@ -101,79 +20,32 @@ export default function Header() {
           <h1 className="font-title text-lg font-bold">Furniro</h1>
         </div>
 
-        
         <nav className="flex items-center justify-between w-full">
           <ul className="flex items-center space-x-6 mx-auto">
-            <li>
-            <Link href="/" target="_blank">Home</Link>
-            </li>
-            <li>
-            <Link href="/Shop" target="_blank">Shop</Link>
-            </li>
-            <li>
-            <Link href="/Blog" target="_blank">Blog</Link>
-            </li>
-            <li>
-            <Link href="/Contact" target="_blank">Contact</Link>
-            </li>
+            <li><Link href="/" target="_blank">Home</Link></li>
+            <li><Link href="/Shop" target="_blank">Shop</Link></li>
+            <li><Link href="/Blog" target="_blank">Blog</Link></li>
+            <li><Link href="/Contact" target="_blank">Contact</Link></li>
           </ul>
 
-          
-  <div className="flex items-center gap-[45px] ml-auto">
-          <Link href="/profile">
-            <Icon
-              icon="mdi:account-outline"
-              className="w-7 h-7 text-black"
-              aria-label="Account"
-            />
-          </Link>
-          <Link href="/search">
-            <Icon
-              icon="mdi:magnify"
-              className="w-7 h-7 text-black"
-              aria-label="Search"
-            />
-          </Link>
-          <Link href="/wishlist">
-            <Icon
-              icon="mdi:heart-outline"
-              className="w-7 h-7 text-black"
-              aria-label="Wishlist"
-            />
-          </Link>
-          <Link href="/cart">
-            <Icon
-              icon="mdi:cart-outline"
-              className="w-7 h-7 text-black"
-              aria-label="Cart"
-            />
-          </Link>
-        </div>
-
+          <div className="flex items-center gap-[45px] ml-auto">
+            <Link href="/profile">
+              <Icon icon="mdi:account-outline" className="w-7 h-7 text-black" aria-label="Account" />
+            </Link>
+            <Link href="/search">
+              <Icon icon="mdi:magnify" className="w-7 h-7 text-black" aria-label="Search" />
+            </Link>
+            <Link href="/wishlist">
+              <Icon icon="mdi:heart-outline" className="w-7 h-7 text-black" aria-label="Wishlist" />
+            </Link>
+            <Link href="/cart">
+              <Icon icon="mdi:cart-outline" className="w-7 h-7 text-black" aria-label="Cart" />
+            </Link>
+          </div>
         </nav>
-
-        {/* Mobile Menu */}
-        <div className="block sm:hidden">
-          <button className="text-blue-500">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 6h16M4 12h16m-7 6h7"
-              />
-            </svg>
-          </button>
-        </div>
       </div>
 
-      
+      {/* Hero Section */}
       <div className="relative w-full h-[316px]">
         <Image
           src="/images/header.png"
@@ -182,52 +54,121 @@ export default function Header() {
           height={316}
           className="w-full h-full object-cover"
         />
-
-<div className="absolute inset-0 flex flex-col items-center justify-center text-black">
-    <h2 className="text-4xl font-bold">Shop</h2>
-    <p className="mt-2 text-lg">
-      <span className="text-black-300">Home</span> &gt; <span className="text-black">Shop</span>
-    </p>
-  </div>
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-black">
+          <h2 className="text-4xl font-bold">Contact</h2>
+          <p className="mt-2 text-lg">
+            <span className="text-black-300">Home</span> &gt; <span className="text-black">Contact</span>
+          </p>
+        </div>
       </div>
 
-      <section className="container mx-auto py-16 px-4">
-  <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-    {[
-      { src: "/images/logo1.png", title: "Sylthrine", price: "Rp 2.500.000" },
-      { src: "/images/logo6.png",title: "Lalito", price: "Rp 2.500.000"},
-      { src: "/images/logo3.png", title: "Respira", price: "Rp 7.000.000" },
-      { src: "/images/logo4.png", title: "Leviosa", price: "5.000.000" },
-      { src: "/images/logo5.png", title: "Sytherina", price: "Rp 2.500.000" },
-      { src: "/images/logo6.png", title: "Lalito", price: "Rp 2.500.000" },
-      { src: "/images/logo7.png", title: "Levisio", price: "Rp 2.500.000" },
-      { src: "/images/logo8.png", title: "Respira", price: "Rp 7.000.000" },
-      { src: "/images/logo9.png", title: "Sytherina", price: "Rp 500.000" },
-      { src: "/images/logo10.png", title: "Lalito", price: "Rp 2.500.000" },
-      { src: "/images/logo11.png", title: "Levisio", price: "Rp 2.500.000" },
-      { src: "/images/logo12.png", title: "Respira", price: "Rp 7.000.000" },
-      { src: "/images/logo13.png", title: "Sytherina", price: "Rp 500.000" },
-      { src: "/images/logo14.png", title: "Lalito", price: "2.500.000" },
-      { src: "/images/logo15.png", title: "Levisio", price: "2.500.000" },
-      { src: "/images/logo16.png", title: "Respira", price: "2.500.000" },
-    ].map((product, index) => (
-      <div key={index} className="flex flex-col items-center">
-        <Image
-          src={product.src}
-          alt={product.title}
-          width={285}
-          height={420}
-          style={{ objectFit: "contain" }}
-          className="mb-4"
-        />
-        <p className="font-bold text-gray-800">{product.title}</p>
-        <p className="text-gray-600">{product.price}</p>
-      </div>
-    ))}
-  </div>
-</section>
 
-<section className="bg-[#FAF3EA] py-[100px] mt-[58px]">
+    <section className="md:mt-[98px] mt-10 px-5 mb-[63px] max-w-[1440px] mx-auto">
+        <div className="text-center max-w-[644px] mx-auto ">
+            <h1 className="text-black text-[36px] font-semibold leading-normal">Get In Touch With Us</h1>
+            <p className="text-[#9F9F9F] text-center text-[16px] font-normal leading-normal">For More Information About Our
+                Product & Services. Please Feel Free To Drop Us An Email. Our Staff Always
+                Be There To Help You Out. Do Not Hesitate!</p>
+        </div>
+        <div className="flex md:gap-10 flex-wrap md:justify-center mt-20 ">
+            <div className="md:w-[40%] mt-9 px-5">
+
+
+                <div className="flex items-start gap-[30px]">
+                    <div className="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="28" viewBox="0 0 22 28" fill="none">
+                            <path
+                                d="M11 0.120087C8.08369 0.123477 5.28779 1.26659 3.22564 3.29867C1.16348 5.33075 0.00345217 8.08587 1.17029e-05 10.9597C-0.00348119 13.3081 0.774992 15.5929 2.21601 17.4634C2.21601 17.4634 2.51601 17.8527 2.56501 17.9088L11 27.7118L19.439 17.9039C19.483 17.8517 19.784 17.4634 19.784 17.4634L19.785 17.4605C21.2253 15.5907 22.0034 13.3071 22 10.9597C21.9966 8.08587 20.8365 5.33075 18.7744 3.29867C16.7122 1.26659 13.9163 0.123477 11 0.120087ZM11 14.9013C10.2089 14.9013 9.43553 14.6702 8.77773 14.237C8.11993 13.8039 7.60724 13.1883 7.30449 12.4681C7.00174 11.7478 6.92253 10.9553 7.07687 10.1907C7.23121 9.42608 7.61217 8.72374 8.17158 8.17249C8.73099 7.62124 9.44373 7.24583 10.2197 7.09374C10.9956 6.94165 11.7998 7.01971 12.5307 7.31804C13.2616 7.61638 13.8864 8.12159 14.3259 8.7698C14.7654 9.418 15 10.1801 15 10.9597C14.9987 12.0047 14.5768 13.0065 13.827 13.7454C13.0771 14.4843 12.0605 14.9 11 14.9013Z"
+                                fill="black" />
+                        </svg>
+                    </div>
+                    <div className="max-w-[212px]">
+                        <h4 className="text-black text-[24px] font-medium leading-normal">Address</h4>
+                        <p className="text-black text-[16px] font-normal leading-normal">236 5th SE Avenue, New York
+                            NY10000, United States</p>
+                    </div>
+                </div>
+                <div className="flex items-start   gap-[30px] my-[42px]">
+                    <div className="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                            <path
+                                d="M25.6091 21.425L20.5279 16.805C20.2877 16.5867 19.972 16.4703 19.6476 16.4803C19.3232 16.4903 19.0154 16.626 18.7891 16.8587L15.7979 19.935C15.0779 19.7975 13.6304 19.3462 12.1404 17.86C10.6504 16.3687 10.1991 14.9175 10.0654 14.2025L13.1391 11.21C13.3721 10.9839 13.508 10.676 13.5181 10.3515C13.5281 10.027 13.4115 9.71129 13.1929 9.47124L8.5741 4.39124C8.35541 4.15044 8.05145 4.00437 7.72679 3.98407C7.40214 3.96376 7.08235 4.07082 6.83535 4.28249L4.12285 6.60874C3.90674 6.82564 3.77775 7.11431 3.76035 7.41999C3.7416 7.73249 3.3841 15.135 9.1241 20.8775C14.1316 25.8837 20.4041 26.25 22.1316 26.25C22.3841 26.25 22.5391 26.2425 22.5804 26.24C22.886 26.2229 23.1745 26.0933 23.3904 25.8762L25.7154 23.1625C25.9279 22.9163 26.0357 22.5968 26.0159 22.2721C25.996 21.9475 25.85 21.6435 25.6091 21.425Z"
+                                fill="black" />
+                        </svg>
+                    </div>
+                    <div className="max-w-[212px] ">
+                        <h4 className="text-black text-[24px] font-medium leading-normal">Address</h4>
+                        <p className="text-black text-[16px] font-normal leading-normal">Mobile: +(84) 546-6789
+                            Hotline: +(84) 456-6789</p>
+                    </div>
+                </div>
+                <div className="flex items-start gap-[30px]">
+                    <div className="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+                            <g clip-path="url(#clip0_63_247)">
+                                <path
+                                    d="M23 11.5C23 14.55 21.7884 17.4751 19.6317 19.6317C17.4751 21.7884 14.55 23 11.5 23C8.45001 23 5.52494 21.7884 3.36827 19.6317C1.2116 17.4751 0 14.55 0 11.5C0 8.45001 1.2116 5.52494 3.36827 3.36827C5.52494 1.2116 8.45001 0 11.5 0C14.55 0 17.4751 1.2116 19.6317 3.36827C21.7884 5.52494 23 8.45001 23 11.5ZM11.5 5.03125C11.5 4.84063 11.4243 4.65781 11.2895 4.52302C11.1547 4.38823 10.9719 4.3125 10.7812 4.3125C10.5906 4.3125 10.4078 4.38823 10.273 4.52302C10.1382 4.65781 10.0625 4.84063 10.0625 5.03125V12.9375C10.0625 13.0642 10.0961 13.1886 10.1597 13.2982C10.2233 13.4077 10.3147 13.4985 10.4247 13.5614L15.456 16.4364C15.6211 16.5256 15.8146 16.5467 15.995 16.4952C16.1755 16.4437 16.3287 16.3236 16.4218 16.1607C16.5149 15.9977 16.5406 15.8048 16.4933 15.6232C16.4461 15.4415 16.3297 15.2856 16.169 15.1886L11.5 12.5206V5.03125Z"
+                                    fill="black" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_63_247">
+                                    <rect width="23" height="23" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div className="max-w-[212px]">
+                        <h4 className="text-black text-[24px] font-medium leading-normal">Address</h4>
+                        <p className="text-black text-[16px] font-normal leading-normal">Monday-Friday: 9:00 - 22:00
+                            Saturday-Sunday: 9:00 - 21:00</p>
+                    </div>
+                </div>
+            </div>
+            <div className="md:w-[50%] w-full px-5 ">
+                <form action="#">
+                <div>
+                    <label className="block w-full mb-[22px] mt-[36px]" >Your Name</label>
+                    <div className="border border-[#9F9F9F] rounded-[10px] bg-white py-[16px] max-w-[528.75px]">
+                        <input type="text" placeholder="Your Name" id="name"/>
+                    </div>
+                </div>
+                <div>
+                    <label className="block w-full mb-[22px] mt-[36px]">Email address</label>
+                    <div className="border border-[#9F9F9F] rounded-[10px] bg-white py-[16px] max-w-[528.75px]">
+                        <input type="email" placeholder="Email Address" id="email"/>
+                    </div>
+                </div>
+                <div>
+                    <label className="block w-full mb-[22px] mt-[36px]">Subject</label>
+                    <div className="border border-[#9F9F9F] rounded-[10px] bg-white py-[16px] max-w-[528.75px]">
+                        <input type="text" placeholder="Subject" id="subject"/>
+                    </div>
+                </div>
+
+                <div>
+                    <label className="block w-full mb-[22px] mt-[36px]">Message</label>
+                    <div className="border border-[#9F9F9F] rounded-[10px] bg-white py-[16px] max-w-[528.75px]">
+                        <textarea name="Message" id="msg"
+                            className="outline-none bg-transparent border-none w-full pl-[29px] resize-none"
+                            placeholder="Hi! i’d like to ask about">
+                            </textarea>
+
+                    </div>
+                </div>
+
+                <div className="mt-[49px]">
+                    <button
+                        className="text-white text-[16px] font-normal leading-normal bg-[#B88E2F] rounded-[5px] px-[89px] py-[13px]"
+                        type="submit">Submit</button>
+                </div>
+            </form>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section className="bg-[#FAF3EA] py-[100px] mt-[58px]">
         <div className="feature md:flex md:px-[53px] px-10 md:justify-around  flex-wrap max-w-[1440px] mx-auto">
             <div className="flex gap-[10px] flex-wrap">
                 <div>
@@ -303,11 +244,7 @@ export default function Header() {
                 </div>
             </div>
         </div>
-    </section>
-
-
-      {/*yaha se */}
-      <div className="bg-gray-50 py-8">
+        <div className="bg-gray-50 py-8">
   <div className="container mx-auto px-4">
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
      
@@ -342,10 +279,6 @@ export default function Header() {
   </div>
 </div>
 
-
-    /* Footer */
-
-    <footer className="bg-gray-100 py-12">
   <div className="container mx-auto">
     <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">
   
@@ -408,7 +341,7 @@ export default function Header() {
   <div className="text-center text-gray-600 mt-12">
     <p>&copy; 2023 furino. All rights reserved. <span className="text-blue-600 hover:text-blue-700">Privacy Policy</span> | <span className="text-blue-600 hover:text-blue-700">Terms of Service</span> | <span className="text-blue-600 hover:text-blue-700">Cookie Settings</span></p>
   </div>
-</footer>
-</header>
+    </section>
+    </div>
   );
 }
