@@ -1,15 +1,13 @@
-import Nav from "./HomepageNav"
-import Hero from "./HomepageHero"
-import Responsive from "./HomepageResponsive"
-import Products from "./Homepageproducts"
-import Tools from "./Homepagetools"
+import Nav from "../components/HomepageNav"
+import Hero from "../components/HomepageHero"
+import Responsive from "../components/HomepageResponsive"
+import Products from "../components/Homepageproducts"
+import Tools from "../components/Homepagetools"
 
 
 export default function Home() {
   return (
     <div>
-      
-      <Nav/>
       <Hero/>
       <Responsive/>
       <Products/>
